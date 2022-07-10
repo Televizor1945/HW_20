@@ -2,6 +2,7 @@ import pytest
 
 from service.director import DirectorService
 
+#Создаю класс для тестирования DirectorService
 class TestDirectorService:
     @pytest.fixture(autouse=True)
     def director_service(self, director_dao):

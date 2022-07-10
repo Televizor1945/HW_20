@@ -9,7 +9,10 @@ from dao.model.genre import Genre
 from dao.model.movie import Movie
 from dao.movie import MovieDAO
 
+#В данной директории создаём фикстуры для DAO имитируя выполнения сессии с базой данных
 
+
+#Создаем фикстуру с моком для DirectorDAO
 @pytest.fixture()
 def director_dao():
     director_dao = DirectorDAO(None)
@@ -26,6 +29,7 @@ def director_dao():
 
     return director_dao
 
+#Создаем фикстуру с моком для GenreDAO
 @pytest.fixture()
 def genre_dao():
     genre_dao = GenreDAO(None)
@@ -42,6 +46,7 @@ def genre_dao():
 
     return genre_dao
 
+#Создаем фикстуру с моком для MovieDAO
 @pytest.fixture()
 def movie_dao():
     movie_dao = MovieDAO(None)

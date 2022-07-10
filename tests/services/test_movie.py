@@ -2,6 +2,7 @@ import pytest
 
 from service.movie import MovieService
 
+#Создаю класс для тестирования MovieService
 class TestMovieService:
     @pytest.fixture(autouse=True)
     def movie_service(self, movie_dao):

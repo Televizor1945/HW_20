@@ -2,6 +2,7 @@ import pytest
 
 from service.genre import GenreService
 
+#Создаю класс для тестирования GenreService
 class TestGenreService:
     @pytest.fixture(autouse=True)
     def genre_service(self, genre_dao):
